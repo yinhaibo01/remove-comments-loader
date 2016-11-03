@@ -1,25 +1,25 @@
 {
   "_args": [
     [
-      "stripcomment2-loader",
+      "remove-comments-loader",
       "E:\\work\\kiln\\SpreadJS\\Sheets\\Source"
     ]
   ],
-  "_from": "stripcomment2-loader@*",
-  "_id": "stripcomment2-loader@0.1.0",
+  "_from": "remove-comments-loader@*",
+  "_id": "remove-comments-loader@0.1.0",
   "_inCache": true,
   "_installable": true,
-  "_location": "/stripcomment2-loader",
+  "_location": "/remove-comments-loader",
   "_nodeVersion": "0.12.2",
   "_npmUser": {
-    "email": "ingwie2000@googlemail.com",
-    "name": "ingwiephoenix"
+    "email": "yinhaibo21@gmail.com",
+    "name": "benyin"
   },
   "_npmVersion": "2.7.4",
   "_phantomChildren": {},
   "_requested": {
-    "name": "stripcomment2-loader",
-    "raw": "stripcomment2-loader",
+    "name": "remove-comments-loader",
+    "raw": "remove-comments-loader",
     "rawSpec": "",
     "scope": null,
     "spec": "*",
@@ -28,10 +28,10 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "http://myproget.grapecity.net/npm/npm/stripcomment2-loader/-/stripcomment2-loader-0.1.0.tgz",
+  "_resolved": "http://myproget.grapecity.net/npm/npm/remove-comments-loader/-/remove-comments-loader-0.1.0.tgz",
   "_shasum": "0ffb7109989f12a9bf38f7f2e58a353a20e5b3eb",
   "_shrinkwrap": null,
-  "_spec": "stripcomment2-loader",
+  "_spec": "remove-comments-loader",
   "_where": "E:\\work\\kiln\\SpreadJS\\Sheets\\Source",
   "author": {
     "email": "ingwie2000@gmail.com",
@@ -48,7 +48,7 @@
   "devDependencies": {},
   "dist": {
     "shasum": "0ffb7109989f12a9bf38f7f2e58a353a20e5b3eb",
-    "tarball": "http://myproget.grapecity.net/npm/npm/stripcomment2-loader/-/stripcomment2-loader-0.1.0.tgz"
+    "tarball": "http://myproget.grapecity.net/npm/npm/remove-comments-loader/-/remove-comments-loader-0.1.0.tgz"
   },
   "homepage": "https://github.com/IngwiePhoenix/commentstrip-loader",
   "keywords": [
@@ -57,9 +57,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "stripcomment2-loader",
+  "name": "remove-comments-loader",
   "optionalDependencies": {},
-  "readme": "# `stripcomments-loader` - A tiny loader to blanken your code.\n\nWhile using UglifyJS over WebPack, I realized that the comments weren't stripped, actually. So I decided to write this loader that processes files and cleans them from comments - EXCEPT when debugging is enabled.\n\n## Usage\nIt's recommended to use this as a `preLoaders` entry to process multiple files that use either `//` or `/* ... */` as comment indicators. Examples include JavaScript and CSS.\n\n```javascript\nmodule.exports = {\n    entry: \"./test.js\",\n    output: {\n        path: __dirname,\n        filename: \"bundle.js\"\n    },\n    module: {\n        preLoaders: [\n            {\n                test: /\\.(js|css)$/,\n                loader: \"stripcomments?-lines\"\n            }\n        ]\n    }\n}\n```\n\nNow just require any JS or CSS file, and you should see comments getting stripped.\n\nTo retain comments, set `debug: true`. In this case, comments are kept in-place.\n\n## Query options\nYou can control which and what is stripped:\n\n    stripcomments?-block\n\nThis will **only** strip block comments. Adding `-line` will **only** strip line comments. Supplying both or none, then all will be stripped. Passing `+safe` will have extra effects on which comments are to be removed.\n",
+  "readme": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IngwiePhoenix/commentstrip-loader.git"
